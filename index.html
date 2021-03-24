@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/whatIs.css">
+   <link rel="stylesheet" href="css/calculator.css">
+   <link rel="stylesheet" href="css/media.css">
+   <title>Calcular IMC</title>
+</head>
+<body>
+   <main>
+      <header class="title">
+         <h1>Calcule seu IMC</h1>
+         <img src="image/balanceImage.png" alt="">
+      </header>
+      <div class="container">
+         <section class="whatIs">
+            <div>
+               <h2>O que é IMC?</h2>
+               <p>
+                  IMC é a sigla para <b>Índice de Massa Corporal</b>, 
+                  é um cálculo que serve para avaliar se a pessoa 
+                  está dentro do seu peso ideal em relação à sua altura. 
+                  Assim, de acordo com o valor do resultado do IMC, 
+                  a pessoa pode saber se está dentro do peso ideal, 
+                  acima ou abaixo.
+               </p>
+               
+               <p>
+                  A fórmula matemática para calcular o IMC, é: <br>
+                  <b>peso ÷ (altura x altura)</b>.
+               </p>
+
+               <p>
+                  Mas você também pode saber se está dentro do peso ideal 
+                  utilizando nossa calculadora, apenas informando
+                  as suas especificações.
+               </p>
+
+               <p>
+                  Vai lá! ;)
+               </p>
+            </div>
+         </section>
+
+         <section class="calculator">
+            <form>
+               <fieldset>
+                  <div class="side-by-side">
+                     <div class="age">
+                        <div>
+                           <p>Idade:</p>
+                           <input type="text" data-js="age" maxlength="3" placeholder="ex: 22">
+                        </div>
+                        <div class="hidden">
+                           <input type="hidden">apenastextoparapreenchera
+                        </div>
+                     </div>
+                     <div>
+                        <p>Altura(m):</p>
+                        <input type="text" data-js="height" maxlength="4" placeholder="ex: 1.80">
+                     </div>
+                     <div>
+                        <p>Peso(kg):</p>
+                        <input type="text" data-js="kg" maxlength="7" placeholder="ex: 80.500">
+                     </div>
+                  </div>
+                  <input type="button" value="Calcular" onclick='resultIMC()'>
+               </fieldset>
+            </form>
+
+            <section class="results" data-result="results">
+               <header class="header-results">
+                  <h2>Resultado</h2>
+               </header>
+               <div class="statics">
+                  <p class="classificacao"></p>
+                  <p class="resultIMC"></p>
+               </div>
+            </section>
+         </section>
+      </div>
+   </main>
+   <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+section.calculator{
+   padding: 200px 50px;
+   background-color: var(--calculatorBackground);
+   width: 50%;
+}
+section.calculator p {
+   margin: 5px 0;
+}
+form fieldset{
+   border: none;
+   text-align: center;
+}
+.side-by-side, .age{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 15px;
+   text-align: left;
+}
+.age{
+   width: 100%;
+} 
+input[type=text],
+input[type=button]{
+   padding: 10px;
+   border: 1px solid var(--textColorDarkBlue);
+   border-radius: 20px;
+   text-align: center;
+   outline: none;
+   margin-right: 10px;
+   color: var(--textColorDarkBlue);
+   font-weight: bold;
+}
+input[type=text]::placeholder{
+   font-weight: normal;
+   color: var(--textColorPlaceholder);
+}
+input[data-js=age]{
+   width: 25%;
+}
+input[type=button]{
+   padding: 10px 19%;
+   border-radius: 15px;
+   cursor: pointer;
+   font-size: 24px;
+   color: var(--calcBtnTextColor);
+   background-color: var(--calcBtnBackground);
+   border: none;
+   box-shadow: 0px 7px 0px rgba(34, 111, 28, 0.5);
+   transition: .5s;
+}
+input[type=button]:hover{
+   background-color: var(--calcBtnBackgroundHover);
+   box-shadow: 0px 7px 0px rgba(28, 81, 111, 0.5);
+}
+
+
+section.results  {
+   text-align: center;
+   margin-top: 50px;
+}
+header.header-results{
+   display: none;
+}
+section.results > .statics{
+   font-size: 20px;
+   font-weight: 700; 
+   text-align: left;
+   width: 400px;
+   margin: 0 auto;
+}

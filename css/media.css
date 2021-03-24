@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1070px){
+   header.title{
+      padding: 25px;
+      position: static;
+      background-color: var(--whatIsBackground);
+   }
+   .container{
+      flex-direction: column;
+   }
+   section.whatIs,
+   section.calculator{
+      padding: 100px 25px 50px;
+      width: auto;
+   }
+   section.calculator{
+      padding: 50px 0px;
+   }
+   section.whatIs div{
+      left: 0;
+      text-align:center
+   }
+   section.whatIs p {
+      width: auto;
+      text-align:justify
+   }
+   input[type=button]{
+      margin-top: 20px;
+   }
+   
+}
+
+
+@media only screen and (max-width: 450px){
+   h1{
+      font-size: 3rem;
+   }
+   img{
+      width: 50px;
+      height: 50px;
+   }
+   section.whatIs{
+      padding-top: 50px;
+   }
+   
+   .hidden{
+      display: none;
+   }
+   .age{
+      margin-bottom: 0;
+   }
+   input[type=text]{
+      margin-bottom: 30px;
+   }
+   input[type=button]{
+      width: 90%;
+   }
+   section.results{
+      padding: 0 25px;
+   }
+   section.results > .statics{
+      width: auto;
+   }
+  
+}

@@ -1,0 +1,16 @@
+
+section.whatIs{
+   padding: 200px 50px;
+   background-color: var(--whatIsBackground);
+   width: 50%;
+}
+section.whatIs div {
+   position: relative;
+   left: 25%;
+}
+section.whatIs h2{
+   color: var(--textColorGreen);
+}
+section.whatIs p{
+   width: 60%
+}
