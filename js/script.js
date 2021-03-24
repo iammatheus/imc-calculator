@@ -126,7 +126,7 @@ function resultIMC(){
          
       }else if(inputValue != '' && age > 60 && imc < 27){
 
-         addClass('excessIMC')
+         addClass('idealIMC')
          classificacao.innerHTML = `Classificação: Adequado ou eutrófico`;
          result.innerHTML = `IMC: ${imc}`;
 
