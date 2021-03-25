@@ -67,17 +67,17 @@ function resultIMC(){
          cleanResult()
          result.innerHTML = 'Informe uma idade maior que 12'
          
-      }else if(height.value <= 0.30){
+      }else if(height.value <= 00){
 
          addClass('darkBlueColor')
          cleanResult()
-         result.innerHTML = 'Informe uma altura acima de 0.30'
+         result.innerHTML = 'Informe uma altura válida'
 
-      }else if(kg.value <= 1){
+      }else if(kg.value <= 0){
 
          addClass('darkBlueColor')
          cleanResult()
-         result.innerHTML = 'Informe um peso acima de 1'
+         result.innerHTML = 'Informe um peso válido'
 
       }else if(inputValue != '' && age <= 60 && imc < 18.5){
 
